@@ -91,29 +91,28 @@
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-0 mx-lg-auto">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                        <a href="{% url 'homePage' %}" class="nav-item nav-link">Home</a>
+                        <a href="{% url 'about_us' %}" class="nav-item nav-link active">About</a>
+                        <a href="{% url 'services' %}" class="nav-item nav-link">Services</a>
+                        <a href="{% url 'blog' %}" class="nav-item nav-link">Blog</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                                <span class="dropdown-toggle">Pages</span>
-                            </a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu">
-                                <a href="feature.html" class="dropdown-item">Our Features</a>
-                                <a href="team.html" class="dropdown-item">Our team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="FAQ.html" class="dropdown-item">FAQs</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
+                                <a href="{% url 'feature' %}" class="dropdown-item">Our Features</a>
+                                <a href="{% url 'team' %}" class="dropdown-item">Our Team</a>
+                                <a href="{% url 'testimonial' %}" class="dropdown-item">Testimonials</a>
+
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
                         <div class="nav-btn px-3">
                             <button class="btn-search btn btn-primary btn-md-square rounded-circle flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
                             <a href="#" class="btn btn-primary rounded-pill py-2 px-4 ms-3 flex-shrink-0"> Get a Quote</a>
                         </div>
                     </div>
+                </div>
                 </div>
                 <div class="d-none d-xl-flex flex-shrink-0 ps-4">
                     <a href="#" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada" data-wow-delay=".9s">
@@ -475,62 +474,62 @@
     <!-- Service End -->
 
     <!-- FAQs Start -->
-<div class="container-fluid faq-section bg-light py-5">
-    <div class="container py-5">
-        <div class="row g-5 align-items-center">
-            <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
-                <div class="h-100">
-                    <div class="mb-5">
-                        <h4 class="text-primary">Some Important FAQ's</h4>
-                        <h1 class="display-4 mb-0">Common Frequently Asked Questions</h1>
-                    </div>
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Q: What services does Teccmark offer?
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body rounded">
-                                    A: Teccmark provides a wide range of digital solutions, including web development, app development, SEO, content writing, software development, graphic design, digital marketing, and Shopify development. Our expert team is dedicated to delivering high-quality, tailored services to meet your unique business needs.
+<!--<div class="container-fluid faq-section bg-light py-5">-->
+<!--    <div class="container py-5">-->
+<!--        <div class="row g-5 align-items-center">-->
+<!--            <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">-->
+<!--                <div class="h-100">-->
+<!--                    <div class="mb-5">-->
+<!--                        <h4 class="text-primary">Some Important FAQ's</h4>-->
+<!--                        <h1 class="display-4 mb-0">Common Frequently Asked Questions</h1>-->
+<!--                    </div>-->
+<!--                    <div class="accordion" id="accordionExample">-->
+<!--                        <div class="accordion-item">-->
+<!--                            <h2 class="accordion-header" id="headingOne">-->
+<!--                                <button class="accordion-button border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">-->
+<!--                                    Q: What services does Teccmark offer?-->
+<!--                                </button>-->
+<!--                            </h2>-->
+<!--                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">-->
+<!--                                <div class="accordion-body rounded">-->
+<!--                                    A: Teccmark provides a wide range of digital solutions, including web development, app development, SEO, content writing, software development, graphic design, digital marketing, and Shopify development. Our expert team is dedicated to delivering high-quality, tailored services to meet your unique business needs.-->
 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Q: What is the transfer application process?
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    A: Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Q: Why should I attend community college?
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    A: Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
-                <img src="{% static 'img/carousel-2.png' %}" class="img-fluid w-100" alt="">
-            </div>
-        </div>
-    </div>
-</div>
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="accordion-item">-->
+<!--                            <h2 class="accordion-header" id="headingTwo">-->
+<!--                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">-->
+<!--                                    Q: What is the transfer application process?-->
+<!--                                </button>-->
+<!--                            </h2>-->
+<!--                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">-->
+<!--                                <div class="accordion-body">-->
+<!--                                    A: Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="accordion-item">-->
+<!--                            <h2 class="accordion-header" id="headingThree">-->
+<!--                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">-->
+<!--                                    Q: Why should I attend community college?-->
+<!--                                </button>-->
+<!--                            </h2>-->
+<!--                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">-->
+<!--                                <div class="accordion-body">-->
+<!--                                    A: Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">-->
+<!--                <img src="{% static 'img/carousel-2.png' %}" class="img-fluid w-100" alt="">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
     <!-- FAQs End -->
 
@@ -540,26 +539,25 @@
             <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
                 <h4 class="text-primary">From Blog</h4>
                 <h1 class="display-4 mb-4">News And Updates</h1>
-                <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
-                </p>
+                <p class="mb-0">Welcome to the Teccmark blog, your ultimate source for industry insights, tips, and trends in web development, digital marketing, SEO, and beyond. Our expert team shares practical advice and the latest updates to help your business stay ahead in the digital landscape. Dive in to explore valuable content designed to empower your success.</p>
             </div>
             <div class="row g-4 justify-content-center">
                 <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="blog-item">
                         <div class="blog-img">
-                            <img src="{% static 'img/blog-1.png' %}" class="img-fluid rounded-top w-100" alt="">
+                            <img src="{% static 'img/web-blog.png' %}" class="img-fluid rounded-top w-100" alt="">
                             <div class="blog-categiry py-2 px-4">
-                                <span>Business</span>
+                                <span>Business with web developemt </span>
                             </div>
                         </div>
                         <div class="blog-content p-4">
                             <div class="blog-comment d-flex justify-content-between mb-3">
-                                <div class="small"><span class="fa fa-user text-primary"></span> Martin.C</div>
-                                <div class="small"><span class="fa fa-calendar text-primary"></span> 30 Dec 2025</div>
-                                <div class="small"><span class="fa fa-comment-alt text-primary"></span> 6 Comments</div>
+                                <div class="small"><span class="fa fa-user text-primary"></span> Antony</div>
+                                <div class="small"><span class="fa fa-calendar text-primary"></span> 30 Dec 2023</div>
+<!--                                <div class="small"><span class="fa fa-comment-alt text-primary"></span> 6 Comments</div>-->
                             </div>
-                            <a href="#" class="h4 d-inline-block mb-3">Which allows you to pay down insurance bills</a>
-                            <p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius libero soluta impedit eligendi? Quibusdam, laudantium.</p>
+                            <a href="#" class="h4 d-inline-block mb-3">How Web Development Can Boost Your Business Growth</a>
+                            <p class="mb-3">In today’s digital age, a strong online presence is crucial for business success. Web development plays a vital role in establishing and enhancing your online footprint. From creating a user-friendly website to implementing effective SEO strategies, web development can significantly boost your business growth. In this article, we will explore how web development can help your business thrive in a competitive market.</p>
                             <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -567,19 +565,19 @@
                 <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="blog-item">
                         <div class="blog-img">
-                            <img src="{% static 'img/blog-2.png' %}" class="img-fluid rounded-top w-100" alt="">
+                            <img src="{% static 'img/soft-blog.png' %}" class="img-fluid rounded-top w-100" alt="">
                             <div class="blog-categiry py-2 px-4">
                                 <span>Business</span>
                             </div>
                         </div>
                         <div class="blog-content p-4">
                             <div class="blog-comment d-flex justify-content-between mb-3">
-                                <div class="small"><span class="fa fa-user text-primary"></span> Martin.C</div>
-                                <div class="small"><span class="fa fa-calendar text-primary"></span> 30 Dec 2025</div>
-                                <div class="small"><span class="fa fa-comment-alt text-primary"></span> 6 Comments</div>
+                                <div class="small"><span class="fa fa-user text-primary"></span> Nizam </div>
+                                <div class="small"><span class="fa fa-calendar text-primary"></span> 15 Dec 2023</div>
+<!--                                <div class="small"><span class="fa fa-comment-alt text-primary"></span> 6 Comments</div>-->
                             </div>
-                            <a href="#" class="h4 d-inline-block mb-3">Leverage agile frameworks to provide</a>
-                            <p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius libero soluta impedit eligendi? Quibusdam, laudantium.</p>
+                            <a href="#" class="h4 d-inline-block mb-3">The Role of Software Development in Business Growth</a>
+                            <p class="mb-3">Software development is a cornerstone of modern business operations. Custom software solutions can streamline processes, enhance productivity, and provide a competitive advantage. This article explores the critical role of software development in driving business growth and achieving long-term success. By investing in tailored software solutions, businesses can unlock new opportunities for innovation and efficiency.</p>
                             <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -587,19 +585,19 @@
                 <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
                     <div class="blog-item">
                         <div class="blog-img">
-                            <img src="{% static 'img/blog-3.png' %}" class="img-fluid rounded-top w-100" alt="">
+                            <img src="{% static 'img/app-blog.png' %}" class="img-fluid rounded-top w-100" alt="">
                             <div class="blog-categiry py-2 px-4">
                                 <span>Business</span>
                             </div>
                         </div>
                         <div class="blog-content p-4">
                             <div class="blog-comment d-flex justify-content-between mb-3">
-                                <div class="small"><span class="fa fa-user text-primary"></span> Martin.C</div>
-                                <div class="small"><span class="fa fa-calendar text-primary"></span> 30 Dec 2025</div>
-                                <div class="small"><span class="fa fa-comment-alt text-primary"></span> 6 Comments</div>
+                                <div class="small"><span class="fa fa-user text-primary"></span> Thakur </div>
+                                <div class="small"><span class="fa fa-calendar text-primary"></span> 14 feb 2024</div>
+<!--                                <div class="small"><span class="fa fa-comment-alt text-primary"></span> 6 Comments</div>-->
                             </div>
-                            <a href="#" class="h4 d-inline-block mb-3">Leverage agile frameworks to provide</a>
-                            <p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius libero soluta impedit eligendi? Quibusdam, laudantium.</p>
+                            <a href="#" class="h4 d-inline-block mb-3">How App Development Drives Business Growth</a>
+                            <p class="mb-3">In the fast-paced digital world, mobile apps have become a key driver of business growth. App development offers numerous benefits, from improving customer engagement to streamlining operations. This article delves into how developing a mobile app can elevate your business and provide a competitive edge. By leveraging the power of mobile technology, businesses can reach new heights of success and innovation.</p>
                             <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -615,28 +613,29 @@
             <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
                 <h4 class="text-primary">Our Team</h4>
                 <h1 class="display-4 mb-4">Meet Our Expert Team Members</h1>
-                <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
+                <p class="mb-0">Our team is our greatest asset. Comprising seasoned professionals with diverse expertise in web development, app development, software solutions, and digital marketing, our team is dedicated to delivering exceptional results. We pride ourselves on our collaborative spirit, innovative approach, and unwavering commitment to client success. Every member of our team brings a unique perspective and a passion for excellence, ensuring that we provide our clients with top-tier services and cutting-edge solutions. Together, we are not just building software; we are building the future.
                 </p>
             </div>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp  " data-wow-delay="0.2s">
                     <div class="team-item">
                         <div class="team-img">
                             <img src="{% static 'img/team-1.jpg' %}" class="img-fluid rounded-top w-100" alt="">
                             <div class="team-icon">
-                                <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href="https://www.facebook.com/nizam.thakur71"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href="https://x.com/teccmark"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href="https://www.linkedin.com/in/nizamthakur/"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href="https://www.instagram.com/_teccmark_/"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                         <div class="team-title p-4">
-                            <h4 class="mb-0">David James</h4>
-                            <p class="mb-0">Profession</p>
+                            <h4 class="mb-0">Nizam Thakur</h4>
+                            <p class="mb-0">Senior Web Developer</p>
+                            <p class="mb-0">Full stack | Django | Laravel </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="team-item">
                         <div class="team-img">
                             <img src="{% static 'img/team-2.jpg' %}" class="img-fluid rounded-top w-100" alt="">
@@ -648,12 +647,13 @@
                             </div>
                         </div>
                         <div class="team-title p-4">
-                            <h4 class="mb-0">David James</h4>
-                            <p class="mb-0">Profession</p>
+                            <h4 class="mb-0">Sajjad Anik</h4>
+                            <p class="mb-0">Software developer </p>
+                            <p class="mb-0">Python | JavaScript </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
                     <div class="team-item">
                         <div class="team-img">
                             <img src="{% static 'img/team-3.jpg' %}" class="img-fluid rounded-top w-100" alt="">
@@ -665,25 +665,9 @@
                             </div>
                         </div>
                         <div class="team-title p-4">
-                            <h4 class="mb-0">David James</h4>
-                            <p class="mb-0">Profession</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="{% static 'img/team-4.jpg' %}" class="img-fluid rounded-top w-100" alt="">
-                            <div class="team-icon">
-                                <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-title p-4">
-                            <h4 class="mb-0">David James</h4>
-                            <p class="mb-0">Profession</p>
+                            <h4 class="mb-0">Sobuj Miazi</h4>
+                            <p class="mb-0">Shopify expart and Digital Marketer</p>
+                            <p class="mb-0">SMM</p>
                         </div>
                     </div>
                 </div>
@@ -698,8 +682,7 @@
             <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
                 <h4 class="text-primary">Testimonial</h4>
                 <h1 class="display-4 mb-4">What Our Customers Are Saying</h1>
-                <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
-                </p>
+                <p class="mb-0">We are proud to showcase the feedback from our satisfied clients.heir success stories and positive reviews inspire us to continuously strive for higher standards and innovation. Here are some of the testimonials from clients who have trusted us with their web development, app development, software solutions, and digital marketing needs.
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
                 <div class="testimonial-item bg-light rounded">
@@ -711,8 +694,8 @@
                         </div>
                         <div class="col-8 col-lg-8 col-xl-9">
                             <div class="d-flex flex-column my-auto text-start p-4">
-                                <h4 class="text-dark mb-0">Client Name</h4>
-                                <p class="mb-3">Profession</p>
+                                <h4 class="text-dark mb-0">Angelo Smith</h4>
+                                <p class="mb-3">CEO,Tech Innovators Inc</p>
                                 <div class="d-flex text-primary mb-3">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
@@ -720,7 +703,7 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
-                                <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim error molestiae aut modi corrupti fugit eaque rem nulla incidunt temporibus quisquam,
+                                <p class="mb-0">Working with Teccmark has been a game-changer for our business. Their team delivered an exceptional custom software solution that streamlined our operations and boosted our productivity. Their expertise and dedication to excellence are truly unmatched.
                                 </p>
                             </div>
                         </div>
@@ -735,17 +718,16 @@
                         </div>
                         <div class="col-8 col-lg-8 col-xl-9">
                             <div class="d-flex flex-column my-auto text-start p-4">
-                                <h4 class="text-dark mb-0">Client Name</h4>
-                                <p class="mb-3">Profession</p>
+                                <h4 class="text-dark mb-0">John Candy</h4>
+                                <p class="mb-3">B2B Business</p>
                                 <div class="d-flex text-primary mb-3">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="fas fa-star text-body"></i>
+                                    <i class="fas fa-star "></i>
                                 </div>
-                                <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim error molestiae aut modi corrupti fugit eaque rem nulla incidunt temporibus quisquam,
-                                </p>
+                                <p class="mb-0">Teccmark's web development and SEO services have significantly improved our online presence. We've seen a notable increase in website traffic and customer engagement. Their team is professional, responsive, and truly understands our business needs.         </p>
                             </div>
                         </div>
                     </div>
@@ -759,17 +741,16 @@
                         </div>
                         <div class="col-8 col-lg-8 col-xl-9">
                             <div class="d-flex flex-column my-auto text-start p-4">
-                                <h4 class="text-dark mb-0">Client Name</h4>
-                                <p class="mb-3">Profession</p>
+                                <h4 class="text-dark mb-0">Emily Johnson </h4>
+                                <p class="mb-3">Founder of StartUp Hub</p>
                                 <div class="d-flex text-primary mb-3">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="fas fa-star text-body"></i>
-                                    <i class="fas fa-star text-body"></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
                                 </div>
-                                <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim error molestiae aut modi corrupti fugit eaque rem nulla incidunt temporibus quisquam,
-                                </p>
+                                <p class="mb-0">Teccmark's app development team created a user-friendly and highly functional mobile app for our business. The app has enhanced our customer experience and provided us with a competitive edge in the market. We couldn't be happier with the results.
                             </div>
                         </div>
                     </div>
@@ -790,15 +771,15 @@
                             <div class="col-md-6 col-lg-6 col-xl-5">
                                 <div class="footer-item">
                                     <a href="index.html" class="p-0">
-                                        <h3 class="text-white"><i class="fab fa-slack me-3"></i> LifeSure</h3>
+                                        <h3 class="text-white"><i class="fab fa-slack me-3"></i> Teccmark </h3>
                                         <!-- <img src="{% static 'img/logo.png' %}" alt="Logo"> -->
                                     </a>
-                                    <p class="text-white mb-4">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
+                                    <p class="text-white mb-4">Innovative digital solutions and exceptional service for business success.</p>
                                     <div class="footer-btn d-flex">
-                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-instagram"></i></a>
-                                        <a class="btn btn-md-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn btn-md-square rounded-circle me-3" href="https://www.facebook.com/profile.php?id=61561531092481"><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-md-square rounded-circle me-3" href="https://x.com/teccmark"><i class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-md-square rounded-circle me-3" href="https://www.instagram.com/_teccmark_/"><i class="fab fa-instagram"></i></a>
+                                        <a class="btn btn-md-square rounded-circle me-0" href="https://www.linkedin.com/company/103680185/admin/feed/posts/"><i class="fab fa-linkedin-in"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -881,7 +862,7 @@
                                             </div>
                                             <div>
                                                 <h4 class="text-white">Address</h4>
-                                                <p class="mb-0">123 Street New York.USA</p>
+                                                <p class="mb-0">221 North sajhanpur, Dhaka, Bangladesh</p>
                                             </div>
                                         </div>
                                     </div>
@@ -892,7 +873,7 @@
                                             </div>
                                             <div>
                                                 <h4 class="text-white">Mail Us</h4>
-                                                <p class="mb-0">info@example.com</p>
+                                                <p class="mb-0">teccmark@gmail.com</p>
                                             </div>
                                         </div>
                                     </div>
@@ -903,7 +884,7 @@
                                             </div>
                                             <div>
                                                 <h4 class="text-white">Telephone</h4>
-                                                <p class="mb-0">(+012) 3456 7890</p>
+                                                <p class="mb-0">+ 01773750602</p>
                                             </div>
                                         </div>
                                     </div>
@@ -916,7 +897,7 @@
                 <div class="col-xl-3">
                     <div class="footer-item">
                         <h4 class="text-white mb-4">Newsletter</h4>
-                        <p class="text-white mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="text-white mb-3">Subscribe to our news letter for updates.</p>
                         <div class="position-relative rounded-pill mb-4">
                             <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
                             <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
@@ -932,7 +913,7 @@
                             </div>
                             <div class="d-flex flex-column ms-3 flex-shrink-0">
                                 <span>Call to Our Experts</span>
-                                <a href="tel:+ 0123 456 7890"><span class="text-white">Free: + 0123 456 7890</span></a>
+                                <a href="tel:+ 8801773750602"><span class="text-white">Free: + 01773750602</span></a>
                             </div>
                         </div>
                     </div>
@@ -947,13 +928,10 @@
         <div class="container">
             <div class="row g-4 align-items-center">
                 <div class="col-md-6 text-center text-md-end mb-md-0">
-                    <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+                    <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Teccmark</a>, All right reserved.</span>
                 </div>
                 <div class="col-md-6 text-center text-md-start text-body">
-                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                    Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a>
+                    Designed By <a class="border-bottom text-white" href="https://teccmark.com">teccmark</a>
                 </div>
             </div>
         </div>
@@ -962,7 +940,7 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+<!--    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>-->
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>

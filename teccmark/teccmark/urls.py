@@ -23,6 +23,14 @@ from home import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.homePage, name='homePage'),
+    path('about/', views.about_us, name='about_us'),
+    path('blog/', views.blog, name='blog'),
+    path('feature/', views.feature, name='feature'),
+    path('services/', views.services, name='services'),
+    path('team/', views.team, name='team'),
+    path('testimonial/', views.testimonial, name='testimonial'),
+    path('contact/', views.contact, name='contact'),
+
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
