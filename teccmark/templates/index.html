@@ -63,13 +63,6 @@
                         </div>
                         <div class="dropdown ms-3">
                             <a href="#" class=" text-dark" data-bs-toggle="dropdown"><small><i class="fas fa-globe-europe text-primary me-2"></i> English</small></a>
-<!--                                <div class="dropdown-menu rounded">-->
-<!--                                    <a href="#" class="dropdown-item">English</a>-->
-<!--                                    <a href="#" class="dropdown-item">Bangla</a>-->
-<!--                                    <a href="#" class="dropdown-item">French</a>-->
-<!--                                    <a href="#" class="dropdown-item">Spanish</a>-->
-<!--                                    <a href="#" class="dropdown-item">Arabic</a>-->
-<!--                                </div>-->
                         </div>
                     </div>
                 </div>
@@ -108,7 +101,7 @@
                         </div>
                         <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
                         <div class="nav-btn px-3">
-                            <button class="btn-search btn btn-primary btn-md-square rounded-circle flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+<!--                            <button class="btn-search btn btn-primary btn-md-square rounded-circle flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>-->
                             <a href="#" class="btn btn-primary rounded-pill py-2 px-4 ms-3 flex-shrink-0"> Get a Quote</a>
                         </div>
                     </div>
@@ -131,24 +124,7 @@
     </div>
     <!-- Navbar & Hero End -->
 
-<!--        &lt;!&ndash; Modal Search Start &ndash;&gt;-->
-<!--        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
-<!--            <div class="modal-dialog modal-fullscreen">-->
-<!--                <div class="modal-content rounded-0">-->
-<!--                    <div class="modal-header">-->
-<!--                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>-->
-<!--                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
-<!--                    </div>-->
-<!--                    <div class="modal-body d-flex align-items-center bg-primary">-->
-<!--                        <div class="input-group w-75 mx-auto d-flex">-->
-<!--                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">-->
-<!--                            <span id="search-icon-1" class="btn bg-light border nput-group-text p-3"><i class="fa fa-search"></i></span>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash; Modal Search End &ndash;&gt;-->
+
 
 
     <!-- Carousel Start -->
@@ -212,16 +188,16 @@
             <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
                 <h4 class="text-primary">Our Features</h4>
                 <h1 class="display-4 mb-4">Teccmark Provide You a Better Business Future</h1>
-                <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
-                </p>
+                <p class="mb-0">"
+Discover the exceptional features that set our services apart in delivering unparalleled digital solutions."</p>
             </div>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="feature-item p-4 pt-0">
                         <div class="feature-icon p-4 mb-4">
-                            <i class="far fa-handshake fa-3x"></i>
+                            <i class="fa fa-users fa-3x" ></i>
                         </div>
-                        <h4 class="mb-4">Trusted Company</h4>
+                        <h4 class="mb-4">Expart Team</h4>
                         <p class="mb-4">We have built a reputation as a reliable and trustworthy partner for businesses of all sizes. Our commitment to excellence and customer satisfaction sets us apart in the industry.
                         </p>
 <!--                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>-->
@@ -281,7 +257,7 @@
                         <p class="text-dark"><i class="fa fa-check text-primary me-3"></i>We can save your time and money.</p>
                         <p class="text-dark"><i class="fa fa-check text-primary me-3"></i>High-quality content.</p>
                         <p class="text-dark mb-4"><i class="fa fa-check text-primary me-3"></i>Stay ahead of your competitors.</p>
-                        <a class="btn btn-primary rounded-pill py-3 px-5" href="#">More Information</a>
+                        <a class="btn btn-primary rounded-pill py-3 px-5" href="{% url 'about_us' %}">More Information</a>
                     </div>
                 </div>
                 <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
@@ -357,7 +333,7 @@
                             <div class="service-content-inner">
                                 <a href="#" class="d-inline-block h4 mb-4">Web Development</a>
                                 <p class="mb-4">Build a robust online presence with our custom web development services. We create responsive, user-friendly websites that are optimized for performance and designed to captivate your audience.</p>
-                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'services' %}" >Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -374,7 +350,7 @@
                             <div class="service-content-inner">
                                 <a href="#" class="d-inline-block h4 mb-4">App Development</a>
                                 <p class="mb-4">Expand your reach with our innovative app development solutions. We design and develop mobile applications that offer seamless user experiences and drive engagement on all platforms.</p>
-                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'services' %}" >Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -391,7 +367,7 @@
                             <div class="service-content-inner">
                                 <a href="#" class="d-inline-block h4 mb-4">SEO</a>
                                 <p class="mb-4">Enhance your visibility and attract more traffic with our strategic SEO services. We employ advanced techniques to improve your search engine rankings and connect you with your target audience.</p>
-                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'services' %}" >Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -408,7 +384,7 @@
                             <div class="service-content-inner">
                                 <a href="#" class="d-inline-block h4 mb-4">Software Development</a>
                                 <p class="mb-4">Streamline your operations with our custom software development solutions and support. We build tailored software that meets your specific business requirements and enhances productivity.</p>
-                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'services' %}" >Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -425,7 +401,7 @@
                             <div class="service-content-inner">
                                 <a href="#" class="d-inline-block h4 mb-4">Content Writing</a>
                                 <p class="mb-4">Engage your audience with high-quality content that resonates. Our professional content writing and development services help you communicate your message effectively and establish your brand's authority.</p>
-                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'services' %}" >Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -442,7 +418,7 @@
                             <div class="service-content-inner">
                                 <a href="#" class="d-inline-block h4 mb-4">Shopify </a>
                                 <p class="mb-4">Boost your e-commerce success with our Shopify development services. We create fully functional, customized Shopify stores that provide a seamless shopping experience and drive sales.</p>
-                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'services' %}" >Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -459,7 +435,7 @@
                             <div class="service-content-inner">
                                 <a href="#" class="d-inline-block h4 mb-4">Digital Marketing </a>
                                 <p class="mb-4">Maximize your online presence with our digital marketing services. We create and manage effective campaigns that boost your brand awareness, engage your audience, and drive conversions.</p>
-                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'services' %}" >Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -558,7 +534,7 @@
                             </div>
                             <a href="#" class="h4 d-inline-block mb-3">How Web Development Can Boost Your Business Growth</a>
                             <p class="mb-3">In today’s digital age, a strong online presence is crucial for business success. Web development plays a vital role in establishing and enhancing your online footprint. From creating a user-friendly website to implementing effective SEO strategies, web development can significantly boost your business growth. In this article, we will explore how web development can help your business thrive in a competitive market.</p>
-                            <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
+                            <a href="{% url 'blog' %}" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -578,7 +554,7 @@
                             </div>
                             <a href="#" class="h4 d-inline-block mb-3">The Role of Software Development in Business Growth</a>
                             <p class="mb-3">Software development is a cornerstone of modern business operations. Custom software solutions can streamline processes, enhance productivity, and provide a competitive advantage. This article explores the critical role of software development in driving business growth and achieving long-term success. By investing in tailored software solutions, businesses can unlock new opportunities for innovation and efficiency.</p>
-                            <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
+                            <a href="{% url 'blog' %}" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -598,7 +574,7 @@
                             </div>
                             <a href="#" class="h4 d-inline-block mb-3">How App Development Drives Business Growth</a>
                             <p class="mb-3">In the fast-paced digital world, mobile apps have become a key driver of business growth. App development offers numerous benefits, from improving customer engagement to streamlining operations. This article delves into how developing a mobile app can elevate your business and provide a competitive edge. By leveraging the power of mobile technology, businesses can reach new heights of success and innovation.</p>
-                            <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
+                            <a href="{% url 'blog' %}" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -786,12 +762,12 @@
                             <div class="col-md-6 col-lg-6 col-xl-3">
                                 <div class="footer-item">
                                     <h4 class="text-white mb-4">Useful Links</h4>
-                                    <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
-                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Features</a>
-                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Services</a>
-                                    <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
-                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Blogs</a>
-                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Contact</a>
+                                    <a href="{% url 'about_us' %}"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                                    <a href="{% url 'feature' %}"><i class="fas fa-angle-right me-2"></i> Features</a>
+                                    <a href="{% url 'services' %}" ><i class="fas fa-angle-right me-2"></i> Services</a>
+                                    <a href="{% url 'testimonial' %}"><i class="fas fa-angle-right me-2"></i> Testimonials</a>
+                                    <a href="{% url 'blog' %}"><i class="fas fa-angle-right me-2"></i> Blogs</a>
+                                    <a href="{% url 'contact' %}"><i class="fas fa-angle-right me-2"></i> Contact</a>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-6 col-xl-4">
